@@ -71,7 +71,7 @@ export default function Profile() {
           <Card className="rounded-2xl shadow-lg hover:shadow-xl transition-all border-0 bg-[#f6f6f6]">
             <CardHeader className="flex flex-col items-center pt-8 pb-4">
               <Avatar className="h-28 w-28 mb-4 shadow-lg">
-                <AvatarImage src={user.avatar} alt={user.name} />
+                {/* <AvatarImage src={user.avatar} alt={user.name} /> */}
                 <AvatarFallback className="text-3xl">{user.name.charAt(0)}</AvatarFallback>
               </Avatar>
               <CardTitle className="text-2xl font-bold text-gray-900">{user.name}</CardTitle>
@@ -88,11 +88,11 @@ export default function Profile() {
               </div>
               <div className="flex items-center gap-3 text-base text-gray-700">
                 <Phone className="h-5 w-5 text-green-400" />
-                <span>+1 (555) 123-4567</span>
+                <span>+91 1111111111</span>
               </div>
               <div className="flex items-center gap-3 text-base text-gray-700">
                 <MapPin className="h-5 w-5 text-purple-400" />
-                <span>City Hall, Downtown</span>
+                <span>Bandra, Mumbai</span>
               </div>
               <div className="flex items-center gap-3 text-base text-gray-700">
                 <Calendar className="h-5 w-5 text-yellow-400" />
