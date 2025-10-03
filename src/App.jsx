@@ -17,7 +17,6 @@ import Reports from "./pages/Reports";
 import CreateProfile from "./pages/CreateProfile";
 import NotFound from "./pages/NotFound";
 import WorkerCreated from "./pages/WorkerCreated";
-import { LogInIcon } from "lucide-react";
 
 const queryClient = new QueryClient();
 
@@ -37,13 +36,13 @@ const App = () => (
           <Route path="/issues" element={<Issues />} />
           <Route path="/issues/:id" element={<IssueDetails />} />
           <Route path="/profile" element={<Profile />} />
-          {/* <Route path="/reports" element={<Reports />} /> */}
-          {/* <Route path="/assign-worker" element={<AssignWorker />} /> */}
-          {/* <Route path="/" element={<WorkerDetails />} />
-          <Route path="/"  />
-          <Route path="/" element={<WorkerCreated />} /> */}
+          <Route path="/reports" element={<Reports />} />
+          <Route path="/assign-worker" element={<AssignWorker />} />
+          <Route path="/workers/:id" element={<WorkerDetails />} />
+          <Route path="/create-profile" element={<CreateProfile />} />
+          <Route path="/worker-created" element={<WorkerCreated />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          {/* <Route path="*" element={<NotFound />} /> */}
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
